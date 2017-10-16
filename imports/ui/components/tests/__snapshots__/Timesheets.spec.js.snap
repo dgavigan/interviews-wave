@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Settings /> Settings SnapShot renders Settings correctly 1`] = `
+exports[`<Timesheets /> Timesheets SnapShot renders Timesheets correctly 1`] = `
 <aside>
   <div
     className="settings container-fluid"
@@ -21,7 +21,7 @@ exports[`<Settings /> Settings SnapShot renders Settings correctly 1`] = `
               className="col"
             >
               <h3>
-                Settings
+                Timesheets
               </h3>
             </div>
           </div>
@@ -63,7 +63,7 @@ exports[`<Settings /> Settings SnapShot renders Settings correctly 1`] = `
 </aside>
 `;
 
-exports[`<Settings /> Settings SnapShot renders Settings correctly with default props 1`] = `
+exports[`<Timesheets /> Timesheets SnapShot renders Timesheets correctly with default props 1`] = `
 <aside>
   <div
     className="settings container-fluid"
@@ -84,7 +84,7 @@ exports[`<Settings /> Settings SnapShot renders Settings correctly with default 
               className="col"
             >
               <h3>
-                Settings
+                Timesheets
               </h3>
             </div>
           </div>

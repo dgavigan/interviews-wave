@@ -2,9 +2,9 @@ import React from "react";
 import ReactTestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
 
-import Settings from "../Settings";
+import Timesheets from "../Timesheets";
 
-describe("<Settings />", () => {
+describe("<Timesheets />", () => {
   let defaultProps;
   beforeEach(() => {
     defaultProps = {
@@ -13,18 +13,18 @@ describe("<Settings />", () => {
     };
   });
 
-  describe("Settings SnapShot", () => {
-    it("renders Settings correctly", () => {
+  describe("Timesheets SnapShot", () => {
+    it("renders Timesheets correctly", () => {
       const tree = ReactTestRenderer.create(
-        <Settings {...defaultProps} />
+        <Timesheets {...defaultProps} />
       ).toJSON();
       expect(tree).toMatchSnapshot();
     });
 
-    it("renders Settings correctly with default props", () => {
+    it("renders Timesheets correctly with default props", () => {
       delete defaultProps.settingsFields;
       const tree = ReactTestRenderer.create(
-        <Settings {...defaultProps} />
+        <Timesheets {...defaultProps} />
       ).toJSON();
       expect(tree).toMatchSnapshot();
     });

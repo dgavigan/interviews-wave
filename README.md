@@ -3,6 +3,8 @@
 ## Intro
 A Bootstrap - React - Meteor - Mongo app.  Built from [a boilerplate](https://github.com/mackbrowne/beehive) I have been working on with a friend.
 
+Wave interview challenge can be found [here](https://github.com/wvchallenges/se-challenge-payroll)
+
 ### Running the app
 
 Install Meteor

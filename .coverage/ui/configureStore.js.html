@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for ui/configureStore.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">All files</a> / <a href="index.html">ui</a> configureStore.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/34</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/23</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Libraries<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+import { crea<span class="cstat-no" title="statement not covered" >teStore, applyMid</span>dleware } from "redux";
+import createSaga<span class="cstat-no" title="statement not covered" >Middleware from "redux</span>-saga";<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+// Reducers
+import rootReducer <span class="cstat-no" title="statement not covered" >from "./rootReducer";<span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+// Sagas
+import initS<span class="cstat-no" title="statement not covered" >aga from "./sagas/init";<span class="cstat-no" title="statement not covered" ></span></span>
+import createTimesheetS<span class="cstat-no" title="statement not covered" >aga from "./sagas/timesheets/createTimesheet";<span class="cstat-no" title="statement not covered" ></span></span>
+import fetchTimesheetsS<span class="cstat-no" title="statement not covered" >aga from "./sagas/timesheets/fetchTimesheets";<span class="cstat-no" title="statement not covered" ></span></span>
+import fetchPayrollS<span class="cstat-no" title="statement not covered" >aga from "./sagas/payroll/fetchPayroll";<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+&nbsp;
+export const combine<span class="cstat-no" title="statement not covered" >dSagas = () =&gt; [<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+  initSaga,
+  createTimesheetSaga,
+  fetchTimesheetsSaga,
+  fetchPayrollSaga
+];
+&nbsp;
+export const registe<span class="cstat-no" title="statement not covered" >rSagas = (sagaMiddleware, sagas) <span class="fstat-no" title="function not covered" >=&gt;<span class="cstat-no" title="statement not covered" ></span></span></span>
+  sagas.forEach(sagaMiddleware.run);
+&nbsp;
+/**
+ * Configures the initialization of a React store, applying middleware, and interfacing with
+ * tooling.
+ *
+ * @param  {State} initialState State object generated from indexed reducers.
+ * @returns {Store} Generates an enhanced Redux Store.
+ */
+export const configur<span class="cstat-no" title="statement not covered" >eStore = initialState =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  // Create saga middleware
+  const sagaMiddleware <span class="cstat-no" title="statement not covered" >= createSagaMiddleware();</span>
+  // Create a function that can apply the saga middleware to a StoreCreator
+  const sagaStoreEnhancer <span class="cstat-no" title="statement not covered" >= applyMiddleware(sagaMiddleware);</span>
+  // Create a function that can create a store with the new middleware
+  const createStoreWithMiddleWare <span class="cstat-no" title="statement not covered" >= sagaStoreEnhancer(createStore);</span>
+  // Determine whether debug mode should be attached
+  let store;<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  if (Meteor.isDevelopment) {</span>
+    const reduxDevTools <span class="cstat-no" title="statement not covered" >= window.__REDUX_DEVTOOLS_EXTENSION_</span>_;
+    const debug =
+<span class="cstat-no" title="statement not covered" >      typeof reduxDevTools === "function" ? reduxDevTools() <span class="fstat-no" title="function not covered" >: </span>a =&gt; a;<span class="cstat-no" title="statement not covered" ></span></span>
+    // Actually create the store with the new middleware
+<span class="cstat-no" title="statement not covered" >    store = createStoreWithMiddleWare(rootReducer, initialState, debug);</span>
+  } else {
+<span class="cstat-no" title="statement not covered" >    store = createStoreWithMiddleWare(rootReducer, initialState);</span>
+  }
+  // Register all sagas with middleware
+<span class="cstat-no" title="statement not covered" >  registerSagas(sagaMiddleware, combinedSagas());</span>
+<span class="cstat-no" title="statement not covered" >  return store;</span>
+};<span class="cstat-no" title="statement not covered" ></span>
+&nbsp;
+export default configureStore;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 17 2017 22:10:45 GMT-0400 (EDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

@@ -1,10 +1,10 @@
 {
-  "name": "beehive",
+  "name": "wave-test",
   "private": false,
   "license": "MIT",
-  "repository": "http://github.com/mackbrowne/beehive/",
+  "repository": "https://github.com/mackbrowne/interviews-wave",
   "scripts": {
-    "start": "MONGO_URL=mongodb://localhost:27017/beehive meteor run",
+    "start": "meteor",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix",
     "lint:check": "./node_modules/.bin/eslint --print-config .eslintrc.js | ./node_modules/.bin/eslint-config-prettier-check",
